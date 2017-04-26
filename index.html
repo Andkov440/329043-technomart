@@ -8,7 +8,7 @@
   <body>
     <header>
       <section class="top-menu">
-        <div class="container">
+        <div class="container clearfix">
           <div class="header-logo">
             <p>Техномарт</p>
           </div>
@@ -23,20 +23,22 @@
           <div class="cart cart-empty">
             <a href="#">Корзина: <span>0</span></a>
           </div>
-          <a class="btn" href="#">Оформить заказ</a>
+          <a class="btn-checkout" href="#">Оформить заказ</a>
         </div>
       </section>
-      <section class="header-middle">
+      <section class="header-bottom">
         <div class="container">
-          <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-          <div class="header-contacts">
-            <p class="tel">+7(812)555-05-55</p>
-            <p class="header-address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
-          </div>
-          <div class="user-login">
-            <a class="enter-btn" href="#">Войти</a>
-            <a class="reg-btn" href="#">Регистрация</a>
-          </div>
+          <div class="header-info">
+            <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <div class="header-contacts">
+              <p class="tel">+7(812)555-05-55</p>
+              <p class="header-address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+             </div>
+            <div class="user-login">
+              <a class="enter-btn" href="#">Войти</a>
+              <a class="reg-btn" href="#">Регистрация</a>
+            </div>
+           </div>
           <nav class="main-navigation">
             <ul>
               <li>
@@ -61,6 +63,7 @@
                 <a href="#">Контакты</a>
               </li>
             </ul>
+
           </nav>
         </div>
       </section>
@@ -80,6 +83,28 @@
             <h2>Техника</h2>
             <a href="#">Для стройки</a>
           </div>
+          <div class="slider">
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <div class="slider-controls">
+              <label for="btn-1"></label>
+              <label for="btn-2"></label>
+            </div>
+            <div class="slider-inner">
+              <div class="slider-slides">
+                <div class="punchers">
+                  <h2>Перфораторы</h2>
+                  <p>Настоящие мужские игрушки</p>
+                  <a href="#">Открыть каталог</a>
+                </div>
+                <div class="drills">
+                  <h2>Дрели</h2>
+                  <p>Соседям на радость</p>
+                  <a href="#">Открыть каталог</a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="sales">
             <h2>Скидки 50%</h2>
             <a href="#">На 350 товаров</a>
@@ -88,70 +113,59 @@
             <h2>Доставка</h2>
             <a href="#">Бесплатно</a>
           </div>
-          <div class="slider">
-            <div class="punchers">
-              <h2>Перфораторы</h2>
-              <p>Настоящие мужские игрушки</p>
-              <a href="#">Открыть каталог</a>
-            </div>
-            <div class="drills">
-              <h2>Дрели</h2>
-              <p>Соседям на радость</p>
-              <a href="#">Открыть каталог</a>
-            </div>
-          </div>
         </div>
         <section class="popular-goods">
           <div class="popular-goods-title">
             <h2>Популярные товары</h2>
             <a class="btn" href="#">Все популярные товары</a>
           </div>
-          <ul>
+          <ul class="clearfix">
             <li>
               <figure>
-                <img src="img/bfg9000.jpg" width="216" height="119" alt="Перфоратор BOSCH BFG 9000">
+                <img src="img/bfg9000.jpg" width="192" height="119" alt="Перфоратор BOSCH BFG 9000">
               </figure>
               <h3>Перфоратор BOSCH BFG 9000</h3>
               <div class="hide-btns">
                   <a class="to-cart-btn">Купить</a>
                   <a class="to-bookmark-btn">В закладки</a>
-                </div>
+              </div>
               <p class="old-price">32500 P.</p>
               <a class="price-btn" href="#">25000 Р.</a>
             </li>
             <li>
               <figure>
-                <img src="img/bfg3000.jpg" width="216" height="119" alt="Перфоратор BOSCH BFG 3000">
+                <img src="img/bfg3000.jpg" width="192" height="119" alt="Перфоратор BOSCH BFG 3000">
               </figure>
               <h3>Перфоратор BOSCH BFG 3000</h3>
               <div class="hide-btns">
                   <a class="to-cart-btn">Купить</a>
                   <a class="to-bookmark-btn">В закладки</a>
-                </div>
+              </div>
               <p class="old-price">22500 P.</p>
               <a class="price-btn" href="#">15000 Р.</a>
             </li>
             <li>
               <figure>
-                <img src="img/bfg6000.jpg" width="216" height="119" alt="Перфоратор BOSCH BFG 6000">
+                <img src="img/bfg6000.jpg" width="192" height="119" alt="Перфоратор BOSCH BFG 6000">
               </figure>
               <h3>Перфоратор BOSCH BFG 6000</h3>
               <div class="hide-btns">
                   <a class="to-cart-btn">Купить</a>
                   <a class="to-bookmark-btn">В закладки</a>
-                </div>
+              </div>
               <p class="old-price">30500 P.</p>
               <a class="price-btn" href="#">25500 Р.</a>
             </li>
             <li>
               <figure>
-                <img src="img/bfg2000.jpg" width="216" height="119" alt="Перфоратор BOSCH BFG 2000">
+                <img src="img/bfg2000.jpg" width="192" height="119" alt="Перфоратор BOSCH BFG 2000">
               </figure>
               <h3>Перфоратор BOSCH BFG 2000</h3>
               <div class="hide-btns">
                   <a class="to-cart-btn">Купить</a>
                   <a class="to-bookmark-btn">В закладки</a>
                 </div>
+                <br><br>
               <a class="price-btn" href="#">125 00 Р.</a>
             </li>
           </ul>
@@ -161,7 +175,7 @@
             <h2>Популярные производители</h2>
             <a class="btn" href="#">Все производители</a>
           </div>
-          <ul>
+          <ul class="clearfix">
             <li>
               <figure>
                 <a href="#"><img src="img/bosch.jpg" width="191" height="97" alt="Bosch"></a>
@@ -206,9 +220,9 @@
         </div>
       </div>
       <section class="services">
-        <div class="container">
+        <div class="container clearfix">
           <h2>Сервисы</h2>
-          <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными</p>
+          <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-tabs">
             <ul>
               <li>
