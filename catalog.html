@@ -2,15 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Техномарт</title>
-     <link href="css/style.css" rel="stylesheet">
+    <title>Каталог</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
       <section class="top-menu">
-        <div class="container">
+        <div class="container clearfix">
           <div class="header-logo">
-            <p>Техномарт</p>
+            <img src="img/header-logo.png" width="220" height="47" alt="Лого">
           </div>
           <form class="search" action="#" method="post">
             <label>Поиск
@@ -21,33 +22,29 @@
             <a href="#">Закладки: <span>0</span></a>
           </div>
           <div class="cart cart-empty">
-            <a href="#">Корзина: <span>10</span></a>
+            <a href="#">Корзина: <span>0</span></a>
           </div>
-          <a class="btn" href="#">Оформить заказ</a>
+          <a class="btn-checkout" href="#">Оформить заказ</a>
         </div>
       </section>
-      <section class="header-middle">
+      <section class="header-bottom">
         <div class="container">
-          <p class="description">
-            Интернет-магазин строительных материалов и инструментов для ремонта
-          </p>
-          <div class="header-contacts">
-            <p class="tel">
-              +7(812)555-05-55
-            </p>
-            <p class="header-address">
-              г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8
-            </p>
-          </div>
-          <div class="user-profile">
-            <p>Равшан Джамшутович</p>
-            <a href="#">Мои заказы</a><span>*</span>
-            <a href="#">Личный кабинет</a>
+          <div class="header-info">
+            <p class="description">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+            <div class="header-contacts">
+              <p class="tel">+7(812)555-05-55</p>
+              <p class="header-address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
+            </div>
+            <div class="user-profile">
+              <p>Равшан Джамшутович</p>
+              <a href="#">Мои заказы</a><span>*</span>
+              <a href="#">Личный кабинет</a>
+            </div>
           </div>
           <nav class="main-navigation">
             <ul>
               <li>
-                <a href="index.html">Главная</a>
+                <a href="#">Главная</a>
               </li>
               <li>
                 <a href="#">Компания</a>
@@ -72,9 +69,9 @@
         </div>
       </section>
     </header>
-    <main>
-      <div class="container">
-        <div class="breadcrumbs">
+    <main class="content clearfix">
+      <div class="breadcrumbs">
+        <div class="container">
           <ul>
             <li>
               <a href="index.html"><img src="home.png" alt="На главную"></a>
@@ -90,6 +87,8 @@
             </li>
           </ul>
         </div>
+      </div>
+      <div class="container clearfix">
         <h1>Перфораторы</h1>
         <div class="filter">
           <p>Фильтр:</p>
@@ -100,6 +99,7 @@
               <input type="text" value="0">
               <input type="text" value="30000">
             </fieldset>
+            <hr>
             <fieldset>
               <legend>Производители:</legend>
               <label>
@@ -118,6 +118,7 @@
               <input type="checkbox" name="Hitachi">Hitachi
               </label>
             </fieldset>
+            <hr>
             <fieldset>
               <legend>Питание:</legend>
               <label>
@@ -131,16 +132,18 @@
           </form>
         </div>
         <div class="catalog">
-          <ul class="sorting">
-            <li>сортировка:</li>
-            <li>по цене</li>
-            <li>по типу</li>
-            <li>по функционалу</li>
-          </ul>
-          <ul>
+          <div class="sorting">
+            <ul>
+              <li>сортировка:</li>
+              <li>по цене</li>
+              <li>по типу</li>
+              <li>по функционалу</li>
+            </ul>
+          </div>
+          <ul class="goods clearfix">
             <li>
               <figure>
-                <img src="img/bfg3000.png" width="20" height="20" alt="Перфоратор BOSCH BFG 3000">
+                <img src="img/bfg3000.jpg" width="191" height="97" alt="Перфоратор BOSCH BFG 3000">
               </figure>
               <div class="hide-btns">
                 <a class="to-cart-btn">Купить</a>
@@ -152,7 +155,7 @@
             </li>
             <li>
               <figure>
-                <img src="img/bfg6000.png" width="20" height="20" alt="Перфоратор BOSCH BFG 6000">
+                <img src="img/bfg6000.jpg" width="191" height="97" alt="Перфоратор BOSCH BFG 6000">
               </figure>
              <div class="hide-btns">
                 <a class="to-cart-btn">Купить</a>
@@ -172,7 +175,7 @@
             </li>
             <li>
               <figure>
-                <img src="img/bfg3000.png" width="20" height="20" alt="Перфоратор BOSCH BFG 3000">
+                <img src="img/bfg3000.jpg" width="191" height="97" alt="Перфоратор BOSCH BFG 3000">
               </figure>
               <div class="hide-btns">
                 <a class="to-cart-btn">Купить</a>
@@ -184,7 +187,7 @@
             </li>
             <li>
               <figure>
-                <img src="img/bfg6000.png" width="20" height="20" alt="Перфоратор BOSCH BFG 6000">
+                <img src="img/bfg6000.jpg" width="191" height="97" alt="Перфоратор BOSCH BFG 6000">
               </figure>
               <div class="hide-btns">
                 <a class="to-cart-btn">Купить</a>
@@ -196,7 +199,7 @@
             </li>
             <li>
               <figure>
-                <img src="img/bfg2000.png" width="20" height="20" alt="Перфоратор BOSCH BFG 2000">
+                <img src="img/bfg2000.jpg" width="191" height="97" alt="Перфоратор BOSCH BFG 2000">
               </figure>
               <div class="hide-btns">
                 <a class="to-cart-btn">Купить</a>
@@ -208,7 +211,7 @@
             </li>
             <li>
               <figure>
-                <img src="img/bfg3000.png" width="20" height="20" alt="Перфоратор BOSCH BFG 3000">
+                <img src="img/bfg3000.jpg" width="191" height="97" alt="Перфоратор BOSCH BFG 3000">
               </figure>
               <div class="hide-btns">
                 <a class="to-cart-btn">Купить</a>
@@ -220,7 +223,7 @@
             </li>
             <li>
               <figure>
-                <img src="img/bfg6000.png" width="20" height="20" alt="Перфоратор BOSCH BFG 6000">
+                <img src="img/bfg6000.jpg" width="191" height="97" alt="Перфоратор BOSCH BFG 6000">
               </figure>
               <div class="hide-btns">
                 <a class="to-cart-btn">Купить</a>
@@ -232,7 +235,7 @@
             </li>
             <li>
               <figure>
-                <img src="img/bfg2000.png" width="20" height="20" alt="Перфоратор BOSCH BFG 2000">
+                <img src="img/bfg2000.jpg" width="191" height="97" alt="Перфоратор BOSCH BFG 2000">
               </figure>
               <div class="hide-btns">
                 <a class="to-cart-btn">Купить</a>
@@ -243,20 +246,12 @@
               <a class="btn-price" href="#">12500 Р.</a>
             </li>
           </ul>
-          <ul class="pagination">
-            <li>
+          <div class="pagination">
               <a href="#">1</a>
-            </li>
-            <li>
               <a href="#">2</a>
-            </li>
-            <li>
               <a href="#">3</a>
-            </li>
-            <li>
-              <a class="btn-pagination" href="#">Следующая</a>
-            </li>
-          </ul>
+              <a href="#">Следующая</a>
+          </div>
         </div>
         <div class="cart-modal">
           <div class="message">
@@ -280,7 +275,7 @@
         <div class="container">
           <div class="left-column">
             <div class="footer-logo">
-              <p>Техномарт</p>
+              <img src="img/footer-logo.png" width="220" height="68" alt="Лого">
             </div>
             <p class="footer-address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8 +7(812)555-05-55</p>
           </div>
@@ -319,7 +314,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom clearfix">
         <div class="container">
           <div class="copyright">
             <p>&#9400; 2010-2015 Компания "Техномарт" Все права защищены</p>

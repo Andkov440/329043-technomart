@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -10,7 +11,7 @@
       <section class="top-menu">
         <div class="container clearfix">
           <div class="header-logo">
-            <p>Техномарт</p>
+            <img src="img/logo-header.png" width="220" height="47" alt="Лого">
           </div>
           <form class="search" action="#" method="post">
             <label>Поиск
@@ -63,7 +64,6 @@
                 <a href="#">Контакты</a>
               </li>
             </ul>
-
           </nav>
         </div>
       </section>
@@ -219,8 +219,8 @@
           </ul>
         </div>
       </div>
-      <section class="services">
-        <div class="container clearfix">
+      <div class="services clearfix">
+        <div class="container">
           <h2>Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-tabs">
@@ -239,7 +239,6 @@
           <div class="services-delivery">
             <h2>Доставка</h2>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-            <img src="img/delivery.jpg" width="468" height="261" alt="Доставка">
           </div>
           <div class="services-guarantee">
             <h2>Гарантия</h2>
@@ -252,11 +251,15 @@
             <a href="#" class="btn">Отправить заявку</a>
             <img src="img/credit.jpg" width="465" height="285" alt="Кредит">
           </div>
-          <div class="about">
+        </div>
+      </div>
+      <div class="about">
+        <div class="container">
+          <div class="transport-companies">
             <h2>Компания "Техномарт"</h2>
             <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкномить на гастарбайтерах.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями: </p>
-            <ul class="transport-companies">
+            <ul>
               <li>Деловые линии</li>
               <li>Автотрейдинг</li>
               <li>ЖелДорЭкспедиция</li>
@@ -295,14 +298,14 @@
             </form>
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <div class="footer-top">
         <div class="container">
           <div class="left-column">
             <div class="footer-logo">
-              <p>Техномарт</p>
+              <img src="img/footer-logo.png" width="220" height="68" alt="Лого">
             </div>
             <p class="footer-address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8 +7(812)555-05-55</p>
           </div>
@@ -341,7 +344,7 @@
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
+      <div class="footer-bottom clearfix">
         <div class="container">
           <div class="copyright">
             <p>&#9400; 2010-2015 Компания "Техномарт" Все права защищены</p>
