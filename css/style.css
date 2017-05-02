@@ -1,20 +1,3 @@
-
-@font-face {
-  font-family: "Cuprum";
-  src:
-    url("../fonts/cuprum.woff") format("woff");
-    url("../fonts/cuprum.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "PT Sans";
-  src:
-    url("../fonts/ptsans.woff") format("woff");
-    url("../fonts/ptsans.woff2") format("woff2");
-}
-
-
-
 * {
 margin:0;
 padding:0;
@@ -48,16 +31,14 @@ body {
 }
 
 .top-menu {
-
 	margin: 0 auto;
-	outline: 1px solid black;
-  background-color: #33445a;
+	background-color: #33445a;
 }
 
 .container {
 	margin: 0 auto;
 	width: 940px;
-	outline: 1px solid red;
+	/*outline: 1px solid red;*/
 }
 
 .clearfix::after{
@@ -82,21 +63,64 @@ body {
   width: 250px;
   margin-right: 10px;
   text-align: center;
+  margin-right: 25px;
 
 
 }
 
 .bookmarks, .cart {
   float: left;
-  width: 140px;
+  max-width: 185px;
+  /*outline: 1px solid black;*/
+}
 
+.bookmarks {
+  margin-right: 35px;
+}
 
+.bookmarks a, .cart a {
+  display: inline-block;
+  vertical-align: top;
+  padding: 6px 10px;
+  padding-left: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Cuprum", sans-serif;
+  font-size: 17px;
+  position: relative;
+}
+
+.bookmarks a:hover, .cart a:hover {
+  background-color: #12a3a;
+}
+
+.bookmarks a::before,
+.cart a::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 3px;
+  width: 16px;
+  height: 18px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -178px -11px;
+  opacity: 0.3;
+}
+
+.cart a::before {
+  background-position: -135px -11px;
+  left: 0px;
+}
+
+.bookmarks a:hover::before,
+.cart a:hover::before {
+  opacity: 1;
 }
 
 .btn-checkout {
   float: right;
   margin-right: 0;
-  padding: 5px 21px;
+  padding: 6px 21px;
   background-color: #6db254;
   text-decoration: none;
   color: #ffffff;
@@ -108,14 +132,14 @@ body {
   min-height: 280px;
 
   background-color: #f3f7f9;
-  outline: 1px solid black;
+  /*outline: 1px solid black;*/
   margin: 0 auto;
   margin-bottom: 60px;
 }
 
 .header-info {
   height: 160px;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
 
 
 }
