@@ -41,7 +41,7 @@ body {
 	/*outline: 1px solid red;*/
 }
 
-.clearfix::after{
+.clearfix::after {
   content: "";
   display: table;
   clear: both;
@@ -340,7 +340,7 @@ body {
   background-color: #f9f5f0;
   outline: 1px solid red;
   height: 90px;
-  clear: both;
+
 }
 
 .popular-goods-title a {
@@ -399,7 +399,7 @@ body {
   background-color: #f9f5f0;
   outline: 1px solid red;
   height: 90px;
-  clear: both;
+
 }
 
 .popular-manufacturer-title h2 {
