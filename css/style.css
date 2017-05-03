@@ -504,8 +504,13 @@ body {
 .popular-manufacturer-title {
   background-color: #f9f5f0;
   outline: 1px solid red;
+<<<<<<< HEAD
   margin-top: 53px;
   margin-bottom: 20px;
+=======
+  height: 90px;
+
+>>>>>>> origin/master
 }
 
 .popular-manufacturer-title {
@@ -535,6 +540,52 @@ body {
   float: right;
 }
 
+<<<<<<< HEAD
+=======
+.popular-goods ul, .goods {
+  padding: 0;
+}
+
+.popular-goods li,
+.catalog .goods li {
+  display: inline-block;
+  width: 218px;
+  border: 1px solid #eaeaea;
+  float: left;
+  list-style: none;
+  margin-right: 20px;
+}
+
+.catalog .goods li {
+  margin-bottom: 20px;
+}
+
+.popular-goods li:last-child,
+.goods li:nth-child(3n)  {
+  margin-right: 0;
+}
+
+.popular-goods figure,
+.goods figure {
+  text-align: center;
+  width: 192px;
+  height: 119px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.popular-manufacturer-title {
+  background-color: #f9f5f0;
+  outline: 1px solid red;
+  height: 90px;
+
+}
+
+.popular-manufacturer-title h2 {
+  float: left;
+}
+
+>>>>>>> origin/master
 .popular-manufacturer-title a {
   padding: 8px 74px;
 }
