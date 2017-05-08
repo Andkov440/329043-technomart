@@ -172,7 +172,7 @@ body {
 
 .header-bottom {
   background-color: #f3f7f9;
-  margin-bottom: 120px;
+
 }
 
 .description {
@@ -225,11 +225,15 @@ body {
   padding-top: 15px;
 }
 
-.user-login {
+.user-login,
+.user-area {
   float: right;
-  width: 280px;
+  width: 300px;
   margin-top: 58px;
+}
 
+.user-area {
+  margin-top: 48px;
 }
 
 .user-login .enter,
@@ -273,6 +277,86 @@ body {
   background-position: -145px -112px;
 }
 
+.username {
+  font-size: 21px;
+  font-family: "Cuprum";
+  color: #000000;
+  line-height: 0.857;
+  position: relative;
+  padding:  12px 0 12px 48px;
+  margin-bottom: 3px;
+}
+
+.username::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 18px;
+  width: 18px;
+  height: 20px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -57px -113px;
+}
+
+.username:hover::before {
+  background-position: -12px -113px;
+}
+
+.username:active::before,
+.username:active
+ {
+  opacity: 0.3;
+}
+
+.btn-logout::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 270px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -186px -113px;
+}
+
+.btn-logout:hover::after {
+  background-position: -230px -113px;
+}
+
+.cabinet,
+.myorders {
+  font-size: 16px;
+  font-family: "Cuprum";
+  color: rgb(50, 66, 92);
+  line-height: 1.125;
+  padding-left: 20px;
+}
+
+.cabinet {
+  padding-left: 7px;
+}
+
+.user-area span {
+  font-size: 16px;
+  color: rgb(50, 66, 92);
+  padding-left: 13px;
+}
+
+.cabinet:hover,
+.myorders:hover {
+  color: #ee3643;
+}
+
+.cabinet:active,
+.myorders:active {
+  opacity: 0.3;
+  color: rgb(50, 66, 92);
+}
+
+.main-navigation {
+  margin-bottom: 60px;
+}
+
 .main-navigation ul{
   background-color: #3d546e;
   border-bottom: 5px solid #293449;
@@ -301,6 +385,9 @@ body {
   color: rgba(255, 255, 255, 0.5)
 }
 
+.products {
+  margin-top: 60px;
+}
 .products h2 {
   color: #ffffff;
   font-size: 24px;
@@ -505,7 +592,8 @@ body {
 }
 
 .popular-goods-title h2,
-.popular-manufacturer-title h2 {
+.popular-manufacturer-title h2
+ {
   font-size: 30px;
   font-family: "Cuprum";
   color: rgb(61, 84, 110);
@@ -544,7 +632,11 @@ body {
     text-align:center;
 }
 
-.catalog-item:nth-child(4n){
+.popular:nth-child(4n){
+    margin-right:0;
+}
+
+.catalog-punchers:nth-child(3n){
     margin-right:0;
 }
 
@@ -744,10 +836,13 @@ body {
 
 .services-tabs {
   margin-top: 70px;
+
+
 }
 
 .tabs-controls {
   float: left;
+
 }
 
 .tabs-controls label {
@@ -1050,27 +1145,68 @@ body {
   color: #ee3643;
 }
 
+.breadcrumbs {
+  margin-top: 21px;
+}
+
 .breadcrumbs ul{
-  font-size: 13px;
+  font-size: 0;
   font-family: "PT Sans";
   color: #000000;
   text-transform: uppercase;
-  line-height: 18px;
+
 }
 
 .breadcrumbs li {
   display: inline-block;
 }
 
-.breadcrumbs a {
+.breadcrumbs a,
+.breadcrumbs span {
+  display: block;
+  position: relative;
   text-decoration: none;
+  padding: 0 20px;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.breadcrumbs a::before,
+.breadcrumbs span::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 18px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -260px -45px;
+}
+
+.breadcrumbs .home {
+  padding-left: 10px;
+}
+
+.breadcrumbs .home::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 16px;
+  height: 19px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -297px -10px;
 }
 
 .content h1 {
   font-size: 30px;
-  font-family: "Cuprum", Arial, sans-serif;
-  color: #32425c;
+  font-family: "Cuprum";
+  color: rgb(61, 84, 110);
   text-transform: uppercase;
+  padding: 16px 30px;
+  background-color: #f9f5f0;
+  margin-top: 20px;
+  margin-bottom: 23px;
 }
 
 .content .filter {
@@ -1079,12 +1215,163 @@ body {
   min-height: 745px;
 }
 
+.filter p {
+  background-color: #f7f3ec;
+  font-size: 13px;
+  font-family: "PT Sans";
+  text-transform: uppercase;
+  line-height: 18px;
+  padding: 10px 0 10px 18px;
+  outline: 1px solid black;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 30px;
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+
+.filter label {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px 30px;
+  position: relative;
+}
+
+.filter input[type=checkbox],
+.filter input[type=radio] {
+  display: none;
+}
+
+.manufacturers label::before,
+.power label::before,
+.manufacturers input:checked + label::before,
+.power input:checked + label::before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 8px;
+  left: 2px;
+  background-image: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -113px -74px;
+}
+
+.power label::before {
+  background-position: -61px -73px;
+}
+
+.manufacturers input:checked + label::before {
+  background-position: -162px -74px;
+}
+
+.power input:checked + label::before {
+  background-position: -10px -73px;
+}
+
+.power label{
+  font-size: 14px;
+}
+.range-filter {
+  width: 220px;
+}
+
+.filter .price {
+  cursor: pointer;
+}
+
+.delimiter {
+  height: 2px;
+  width: 220px;
+  background-color: #e5e5e5;
+  margin-top: 25px;
+}
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f7f3ec;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls label {
+  font-size: 16px;
+  display: inline-block;
+  width: 50%;
+}
+
+.price-controls .dash {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 0 4px;
+}
+
+.price-controls input {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 17px;
+  width: 75px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f7f3ec;
+}
+
 .content .catalog {
   float: right;
   width: 700px;
 }
 
-.sorting  ul {
+.sorting  {
   background-color: #f7f3ec;
   font-size: 13px;
   font-family: "PT Sans";
@@ -1092,14 +1379,95 @@ body {
   line-height: 18px;
 }
 
-.sorting li {
-  display: inline-block;
+.sorting input[type=radio] {
+  display: none;
 }
 
+.sorting .caption-sorting {
+  padding-left: 18px;
+  padding-right: 70px;
+}
+
+.sorting label {
+  display: inline-block;
+  margin: 10px 0;
+  color: rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  border-bottom: 1px dotted #ee3643;
+  margin-left: 67px;
+}
+
+.sorting .sorting-up
+{
+  margin-left: 35px;
+}
+
+.sorting .sorting-down
+{
+  margin-left: 30px;
+}
+
+.sorting .sorting-up,
+.sorting .sorting-down {
+  position: relative;
+}
+
+.sorting .sorting-up::before,
+.sorting .sorting-down::before{
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  width: 16px;
+  height: 19px;
+  background: url("../img/sprite.png") no-repeat;
+  background-position: -140px -45px;
+}
+
+.sorting .sorting-down::before{
+  background-position: -97px -45px;
+}
+
+.sorting label:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-up:hover::before {
+  background-position: -16px -45px;
+}
+
+.sorting-down:hover::before {
+  background-position: -56px -45px;
+}
+
+#btn-sorting-1:checked ~ label[for="btn-sorting-1"],
+#btn-sorting-2:checked ~ label[for="btn-sorting-2"],
+#btn-sorting-3:checked ~ label[for="btn-sorting-3"]
+ {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+#btn-sorting-up:checked ~ label[for="btn-sorting-up"]::before {
+  background-position: -221px -45px;
+}
+
+#btn-sorting-down:checked ~ label[for="btn-sorting-down"]::before {
+  background-position: -181px -45px;
+}
+
+.catalog-items-punchers {
+  margin-top: 20px;
+}
+
+.pagination {
+  margin-top: 27px;
+}
 .pagination a {
   display: inline-block;
-  min-width: 35px;
-  height: 16px;
+  min-width: 37px;
+  height: 18px;
   vertical-align: middle;
   text-align: center;
   line-height: 18px;
@@ -1107,18 +1475,53 @@ body {
   border: 1px solid #e5e5e5;
   font-size: 13px;
   color: black;
-  border-radius: 5px;
+  border-radius: 3px;
   padding: 10px 0;
+  margin-right: 5px;
+}
+
+.pagination a:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination a:active {
+  border: 1px solid #ee3643;
 }
 
 .pagination a:first-child{
   background-color: #ee3643;
+  color: #ffffff;
 }
 
 .pagination a:last-child{
   padding: 10px 20px;
+  text-transform: uppercase;
+  padding: 10px 30px;
 }
 
+.about-punchers {
+  background-color: #f2f6f8;
+  margin-top: 57px;
+}
+
+.about-punchers h2 {
+  font-size: 30px;
+  font-family: "Cuprum";
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  line-height: 0.8;
+  padding-top: 70px;
+}
+
+.about-punchers p {
+  font-size: 13px;
+  font-family: "PT Sans";
+  color: rgb(0, 0, 0);
+  line-height: 24px;
+  padding-top: 30px;
+  padding-bottom: 68px;
+
+}
 .cart-modal {
   display: none;
 }
