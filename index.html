@@ -16,7 +16,7 @@
             <img src="img/header-logo.png" width="220" height="47" alt="Лого">
           </div>
           <form class="search" action="#" method="post">
-            <input type="search" name="search" id="search" placeholder="Поиск:">
+            <input type="search" name="search" id="search" autocomplete="off" placeholder="Поиск:">
           </form>
           <div class="bookmarks">
             <a href="#">Закладки: <span>0</span></a>
@@ -270,23 +270,28 @@
             <a class="btn" href="whiteus.html">Заблудились? Напишите нам!</a>
           </div>
           <div class="write-us">
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
             <form action="#" method="post">
               <div class="top-part">
                 <div class="container-modal">
-                  <label>Ваше имя:
-                    <input type="text" name="fio" value="" placeholder="Представьтесь, пожалуйста">
-                  </label>
-                  <label>Ваш e-mail:
-                    <input type="text" name="email" value="" placeholder="Для отправки ответа">
-                  </label>
-                  <label>Текст письма:
+                  <div class="name">
+                    <label>Ваше имя:
+                      <input type="text" name="fio" value="" placeholder="Представьтесь, пожалуйста">
+                    </label>
+                  </div>
+                  <div class="email">
+                    <label>Ваш e-mail:
+                      <input type="text" name="email" value="" placeholder="Для отправки ответа">
+                    </label>
+                  </div>
+                  <label class="letter-text">Текст письма:
                     <textarea name="text" placeholder="В свободной форме"></textarea>
                   </label>
                 </div>
               </div>
               <div class="bottom-part">
                 <div class="container-modal">
-                  <input type="submit" value="Отправить">
+                  <input type="submit" class="btn" value="Отправить">
                 </div>
               </div>
             </form>

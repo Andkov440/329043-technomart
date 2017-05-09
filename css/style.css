@@ -20,7 +20,7 @@ body {
 
 .container {
 	margin: 0 auto;
-	width: 940px;
+	width: 941px;
 
 }
 
@@ -61,15 +61,15 @@ body {
   background-position: 18px 12px;
 }
 
-::-webkit-input-placeholder {color:#ffffff;}
-::-moz-placeholder          {color:#ffffff;}
-:-moz-placeholder           {color:#ffffff;}
-:-ms-input-placeholder      {color:#ffffff;}
+.search input::-webkit-input-placeholder {color:#ffffff;}
+.search input::-moz-placeholder          {color:#ffffff;}
+.search input:-moz-placeholder           {color:#ffffff;}
+.search input:-ms-input-placeholder      {color:#ffffff;}
 
-:focus::-webkit-input-placeholder {color: transparent}
-:focus::-moz-placeholder          {color: transparent}
-:focus:-moz-placeholder           {color: transparent}
-:focus:-ms-input-placeholder      {color: transparent}
+.search input:focus::-webkit-input-placeholder {color: transparent}
+.search input:focus::-moz-placeholder          {color: transparent}
+.search input:focus:-moz-placeholder           {color: transparent}
+.search input:focus:-ms-input-placeholder      {color: transparent}
 
 .search input:focus {
   background-color: #ffffff;
@@ -977,15 +977,118 @@ body {
   width: 280px;
 }
 
-.map-popup,
-.write-us {
+.map-popup
+ {
   display: none;
+}
+
+.write-us {
+  width: 620px;
+  padding: 50px 80px;
+  color: #000000;
+  background: #ffffff;
+  position: absolute;
+  top: 2520px;
+  left: 50%;
+  outline: 2px solid green;
+  border-top: 7px solid #ff5257;
+  margin-left: -310px;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.75);
+  font-size: 18px;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: #000000;
+  line-height: 1;
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #ff5257;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.container-modal {
+  width: 460px;
+  margin: 0 auto;
+}
+
+.top-part input[type="text"] {
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+  padding: 10px 20px 10px 15px;
+  display: block;
+  margin-top: 5px;
+}
+
+.top-part label,
+.top-part textarea {
+  display: block;
+}
+.top-part textarea {
+  width: 460px;
+  height: 115px;
+  resize: none;
+  overflow: auto;
+  border: 2px solid #dee3e4;
+  border-radius: 3px;
+}
+
+.top-part .name {
+  float: left;
+  margin-right: 20px;
+}
+
+.top-part .email {
+  float: right;
+}
+
+.top-part .letter-text {
+  clear: both;
+}
+
+.bottom-part {
+  background: #f4f4f4;
 }
 
 .about .transport-companies {
   float: left;
   width: 530px;
 }
+
+.top-part input::-webkit-input-placeholder {color:#000000;}
+.top-part input::-moz-placeholder          {color:#000000;}
+.top-part input:-moz-placeholder           {color:#000000;}
+.top-part input:-ms-input-placeholder      {color:#000000;}
+
+.top-part textarea::-webkit-input-placeholder {color:#000000;}
+.top-part textarea::-moz-placeholder          {color:#000000;}
+.top-part textarea:-moz-placeholder           {color:#000000;}
+.top-part textarea:-ms-input-placeholder      {color:#000000;}
 
 .transport-companies h2,
 .contacts h2 {
