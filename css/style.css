@@ -9,8 +9,7 @@ body {
 	line-height: 1.8;
 	color: black;
 	font-family: "PT Sans", Arial, sans-serif;
-  min-height: 3151px;
-	margin: 0;
+  margin: 0;
 	padding: 0;
 }
 
@@ -43,11 +42,8 @@ body {
 
 .search {
   float: left;
-  width: 260px;
-  margin-right: 10px;
   text-align: center;
-  margin-right: 25px;
-
+  margin-right: 15px;
 }
 
 .search input {
@@ -57,44 +53,50 @@ body {
   font-size: 17px;
   font-family: "Cuprum", Arial, sans-serif;
   color: #ffffff;
+  padding-left: 47px;
+  width: 223px;
+  outline: none;
+  -webkit-appearance: none;
+  background: url("../img/icon-search.png") no-repeat;
+  background-position: 18px 12px;
 }
 
-.search:focus,
-.search input:focus,
-.search-icon:focus {
+::-webkit-input-placeholder {color:#ffffff;}
+::-moz-placeholder          {color:#ffffff;}
+:-moz-placeholder           {color:#ffffff;}
+:-ms-input-placeholder      {color:#ffffff;}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.search input:focus {
   background-color: #ffffff;
+  color: #000000;
+  background: url("../img/icon-search-active.png") no-repeat;
+  background-position: 18px 12px;
 }
 
-.search-icon {
-  position: relative;
-}
-
-.search-icon::before {
-  content: "";
-  position: absolute;
-  top: 0px;
-  left: -30px;
-  width: 16px;
-  height: 22px;
-  background: url("../img/sprite.png") no-repeat;
-  background-position: -53px -9px;
+.search input:hover {
+  background-color: #212a3a;
+  background: url("../img/icon-search.png") no-repeat;
+  background-position: 18px 12px;
   opacity: 0.3;
 }
 
-.search-icon:focus::before {
-  background: url("../img/sprite.png") no-repeat;
-  background-position: -11px -9px;
-  background-color: #ffffff;
+.bookmarks {
+  float: left;
+  width: 144px;
 }
 
-.bookmarks, .cart {
+.cart {
   float: left;
-  max-width: 185px;
-
+  width: 141px;
 }
 
 .bookmarks {
-  margin-right: 35px;
+  margin-right: 0;
 }
 
 .bookmarks a,
@@ -102,12 +104,17 @@ body {
   display: inline-block;
   vertical-align: top;
   padding: 5px 10px;
-  padding-left: 30px;
+  padding-left: 40px;
   text-decoration: none;
   color: #ffffff;
   font-family: "Cuprum", sans-serif;
   font-size: 17px;
   position: relative;
+  padding-bottom: 6px;
+}
+
+.bookmarks a {
+  padding-left: 30px;
 }
 
 .bookmarks a:hover,
@@ -120,7 +127,7 @@ body {
   content: "";
   position: absolute;
   top: 13px;
-  left: 3px;
+  left: 4px;
   width: 16px;
   height: 18px;
   background: url("../img/sprite.png") no-repeat;
@@ -134,7 +141,7 @@ body {
 
 .cart a::before {
   background-position: -135px -11px;
-  left: 0px;
+  left: 6px;
 }
 
 .bookmarks a:hover::before,
@@ -188,9 +195,9 @@ body {
 }
 
 .header-contacts {
-  width: 300px;
+  width: 270px;
   float: left;
-  margin-left: 40px;
+  margin-left: 54px;
   text-align: center;
 }
 
@@ -198,18 +205,20 @@ body {
   color: #fb463c;
   border: 2px solid #ffffff;
   position: relative;
-  padding: 57px 0 0 16px;
+  padding: 12px 0;
+  padding-left: 17px;
   font-size: 21px;
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 0.857;
+  margin-top: 46px;
 
 }
 
 .tel::before {
   content: "";
   position: absolute;
-  top: 55px;
-  left: 27px;
+  top: 10px;
+  left: 17px;
   width: 18px;
   height: 20px;
   background: url("../img/sprite.png") no-repeat;
@@ -222,7 +231,7 @@ body {
   font-size: 14px;
   font-family: "Cuprum", Arial, sans-serif;
   line-height: 1.714;
-  padding-top: 15px;
+  padding-top: 3px;
 }
 
 .user-login,
@@ -230,6 +239,10 @@ body {
   float: right;
   width: 300px;
   margin-top: 58px;
+}
+
+.user-login {
+  width: 285px;
 }
 
 .user-area {
@@ -246,6 +259,11 @@ body {
   background-color: #ffffff;
   padding: 10px 15px;
 }
+
+.user-login .registration {
+  margin-left: 10px;
+}
+
 
 .user-login .enter:hover,
 .user-login .registration:hover {
@@ -842,6 +860,17 @@ body {
 
 .tabs-controls {
   float: left;
+  position: relative;
+}
+
+.tabs-controls::after {
+  position: absolute;
+  content: "";
+  background-image: url("../img/line.png");
+  width: 10px;
+  height: 272px;
+  top: -40px;
+  left: 230px;
 
 }
 
@@ -915,6 +944,10 @@ body {
   display: none;
 }
 
+.services-delivery p {
+  width: 280px;
+}
+
 .services-guarantee {
   float: right;
   width: 620px;
@@ -941,6 +974,7 @@ body {
 
 .services-credit p {
   padding-bottom: 30px;
+  width: 280px;
 }
 
 .map-popup,
@@ -971,6 +1005,10 @@ body {
   font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
   padding: 13px 0;
+}
+
+.contacts p {
+  width: 185px;
 }
 
 .transport-companies ul {
@@ -1204,7 +1242,7 @@ body {
   color: rgb(61, 84, 110);
   text-transform: uppercase;
   padding: 16px 30px;
-  background-color: #f9f5f0;
+  background-color: #f2f6f8;
   margin-top: 20px;
   margin-bottom: 23px;
 }
@@ -1222,7 +1260,6 @@ body {
   text-transform: uppercase;
   line-height: 18px;
   padding: 10px 0 10px 18px;
-  outline: 1px solid black;
 }
 
 .filter fieldset {
@@ -1235,7 +1272,8 @@ body {
   font-weight: bold;
   line-height: 30px;
   text-transform: uppercase;
-  padding: 10px 0;
+  padding-top: 12px;
+  padding-bottom: 8px;
 }
 
 .filter label {
@@ -1244,7 +1282,7 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   display: block;
-  padding: 10px 30px;
+  padding: 10px 35px;
   position: relative;
 }
 
@@ -1279,9 +1317,25 @@ body {
 .power input:checked + label::before {
   background-position: -10px -73px;
 }
+.price
+{
+  margin-bottom: 25px;
+}
+
+.manufacturers {
+  margin-bottom: 10px;
+}
+
+.power {
+  margin-top: 5px;
+}
 
 .power label{
   font-size: 14px;
+}
+
+.power legend {
+  padding-bottom: 3px;
 }
 .range-filter {
   width: 220px;
@@ -1292,10 +1346,10 @@ body {
 }
 
 .delimiter {
-  height: 2px;
+  height: 1px;
   width: 220px;
   background-color: #e5e5e5;
-  margin-top: 25px;
+
 }
 .range-controls {
   position: relative;
@@ -1364,6 +1418,19 @@ body {
   border: none;
   border-radius: 5px;
   background: #f7f3ec;
+}
+
+.filtr-btn {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  color: #000000;
+  text-transform: uppercase;
+  padding: 10px 35px;
+  font-family: "PT-Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 70px;
 }
 
 .content .catalog {
