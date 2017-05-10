@@ -16,15 +16,15 @@
             <img src="img/header-logo.png" width="220" height="47" alt="Лого">
           </div>
           <form class="search" action="#" method="post">
-            <input type="search" name="search" id="search" autocomplete="off" placeholder="Поиск:">
+            <label for="search" class="search-icon">
+              <input type="text" name="search" id="search" autocomplete="off" placeholder="Поиск:">
+            </label>
           </form>
-          <div class="bookmarks">
-            <a href="#">Закладки: <span>0</span></a>
-          </div>
-          <div class="cart cart-empty">
-            <a href="#">Корзина: <span>0</span></a>
-          </div>
+          <div class="user-buttons">
+          <a href="#" class="bookmarks-btn">Закладки: <span class="bookmarks-count">0</span></a>
+          <a href="#" class="cart-btn">Корзина: <span class="orders-count">0</span></a>
           <a class="btn-checkout" href="#">Оформить заказ</a>
+          </div>
         </div>
       </section>
       <section class="header-bottom">
@@ -92,12 +92,12 @@
             </div>
             <div class="slider-inner">
               <div class="slider-slides">
-                <!-- <img src="img/left.png" alt="Назад" class="icon-left">
-                <img src="img/right.png" alt="Вперед" class="icon-right"> -->
+              <img src="img/left.png" alt="Назад" class="icon-left">
+              <img src="img/right.png" alt="Вперед" class="icon-right">
                 <div class="punchers">
                   <h2>Перфораторы</h2>
                   <p>Настоящие мужские игрушки</p>
-                  <a href="#" class="btn">Открыть каталог</a>
+                  <a href="catalog.html" class="btn">Открыть каталог</a>
                 </div>
                 <div class="drills">
                   <h2>Дрели</h2>
@@ -164,6 +164,16 @@
                 <div class="price">12500 Р.</div>
             </div>
         </div>
+          <div class="cart-modal">
+            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <div class="message">
+              <p>Товар добавлен в корзину!</p>
+            </div>
+            <div class="modal-btns">
+              <a class="modal-btn-checkout btn" href="#">Оформить заказ</a>
+              <a class="modal-btn-continue btn" href="#">Продолжить покупки</a>
+            </div>
+          </div>
         </section>
         <div class="popular-manufacturer clearfix">
           <div class="popular-manufacturer-title clearfix">
@@ -263,11 +273,11 @@
           <div class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a class="map" href="map.html"><img src="img/map-small.jpg" width="300" height="158" alt="Схема проезда"></a>
+            <a class="map" href="https://yandex.ru/maps"><img src="img/map-small.jpg" width="300" height="158" alt="Схема проезда"></a>
             <div class="map-popup">
               <img src="img/map-big.jpg" width="941" height="449" alt="Схема проезда">
             </div>
-            <a class="btn" href="whiteus.html">Заблудились? Напишите нам!</a>
+            <a class="btn feedback" href="#">Заблудились? Напишите нам!</a>
           </div>
           <div class="write-us">
             <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
@@ -284,9 +294,11 @@
                       <input type="text" name="email" value="" placeholder="Для отправки ответа">
                     </label>
                   </div>
-                  <label class="letter-text">Текст письма:
-                    <textarea name="text" placeholder="В свободной форме"></textarea>
-                  </label>
+                  <div class="letter-text">
+                    <label>Текст письма:
+                      <textarea name="text" placeholder="В свободной форме"></textarea>
+                    </label>
+                  </div>
                 </div>
               </div>
               <div class="bottom-part">
@@ -354,13 +366,14 @@
             <a class="social social-inst" href="http://instagram.com"></a>
           </div>
           <div class="info">
-            <p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+            <p class="developers">Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
           </div>
           <div class="info">
-            <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p class="mail">Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
           </div>
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

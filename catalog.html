@@ -20,13 +20,11 @@
               <input type="text" name="search" id="search" autocomplete="off" placeholder="Поиск:">
             </label>
           </form>
-          <div class="bookmarks">
-            <a href="#">Закладки: <span>0</span></a>
-          </div>
-          <div class="cart cart-empty">
-            <a href="#">Корзина: <span>0</span></a>
-          </div>
+          <div class="user-buttons">
+          <a href="#" class="bookmarks-btn">Закладки: <span class="bookmarks-count">0</span></a>
+          <a href="#" class="cart-btn">Корзина: <span class="orders-count">0</span></a>
           <a class="btn-checkout" href="#">Оформить заказ</a>
+          </div>
         </div>
       </section>
       <section class="header-bottom">
@@ -38,10 +36,10 @@
               <p class="header-address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
              </div>
             <div class="user-area">
-              <p class="username">Равшан Джамшутович<a href="index.html" class="btn-logout"></a></p>
+              <p class="username">Равшан Джамшутович<a href="logout.html" class="btn-logout"></a></p>
 
-              <a class="myorders" href="#">Мои заказы</a><span>&#8226;</span>
-              <a class="cabinet" href="#">Личный кабинет</a>
+              <a class="myorders" href="orders.html">Мои заказы</a><span>&#8226;</span>
+              <a class="cabinet" href="cabinet.html">Личный кабинет</a>
             </div>
            </div>
           <nav class="main-navigation">
@@ -255,12 +253,13 @@
           </div>
         </div>
         <div class="cart-modal">
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
           <div class="message">
             <p>Товар добавлен в корзину!</p>
           </div>
           <div class="modal-btns">
-            <a class="modal-btn-checkout" href="#">Оформить заказ</a>
-            <a class="modal-btn-continue" href="#">Продолжить покупки</a>
+            <a class="modal-btn-checkout btn" href="#">Оформить заказ</a>
+            <a class="modal-btn-continue btn" href="#">Продолжить покупки</a>
           </div>
         </div>
       </div>
@@ -326,13 +325,14 @@
             <a class="social social-inst" href="http://instagram.com"></a>
           </div>
           <div class="info">
-            <p>Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+            <p class="developers">Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
           </div>
           <div class="info">
-            <p>Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+            <p class="mail">Обратная связь: <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
           </div>
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
