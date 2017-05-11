@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Техномарт</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
@@ -16,7 +16,7 @@
             <img src="img/header-logo.png" width="220" height="47" alt="Лого">
           </div>
           <form class="search" action="#" method="post">
-            <label for="search" class="search-icon">
+            <label for="search" class="search-icon">Поиск
               <input type="text" name="search" id="search" autocomplete="off" placeholder="Поиск:">
             </label>
           </form>
@@ -87,8 +87,8 @@
           <input class="slider-input" type="radio" id="btn-2" name="toggle">
           <div class="slider">
             <div class="slider-controls">
-              <label for="btn-1"></label>
-              <label for="btn-2"></label>
+              <label for="btn-1">первый</label>
+              <label for="btn-2">второй</label>
             </div>
             <div class="slider-inner">
               <div class="slider-slides">
@@ -163,16 +163,6 @@
                 <div class="discount"></div>
                 <div class="price">12500 Р.</div>
             </div>
-        </div>
-          <div class="cart-modal">
-            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-            <div class="message">
-              <p>Товар добавлен в корзину!</p>
-            </div>
-            <div class="modal-btns">
-              <a class="modal-btn-checkout btn" href="#">Оформить заказ</a>
-              <a class="modal-btn-continue btn" href="#">Продолжить покупки</a>
-            </div>
           </div>
         </section>
         <div class="popular-manufacturer clearfix">
@@ -229,17 +219,15 @@
           <h2>Сервисы</h2>
           <p>Хороший интернет-магазин отличается от плохого не только ценами!<br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           <div class="services-tabs">
-            <input type="radio" id="btn-tabs-1" name="toggle1" checked>
-            <input type="radio" id="btn-tabs-2" name="toggle1">
-            <input type="radio" id="btn-tabs-3" name="toggle1">
-            <div class="tabs-controls">
-              <label for="btn-tabs-1">Доставка</label>
-              <label for="btn-tabs-2">Гарантия</label>
-              <label for="btn-tabs-3">Кредит</label>
-              <!-- <img src="img/line.png" width="10" height="272"> -->
-            </div>
-
             <div class="tabs">
+              <input type="radio" id="btn-tabs-1" name="toggle1" checked>
+              <input type="radio" id="btn-tabs-2" name="toggle1">
+              <input type="radio" id="btn-tabs-3" name="toggle1">
+              <div class="tabs-controls">
+                <label for="btn-tabs-1">Доставка</label>
+                <label for="btn-tabs-2">Гарантия</label>
+                <label for="btn-tabs-3">Кредит</label>
+              </div>
               <div class="services-delivery">
                 <h2>Доставка</h2>
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>Ведь мы неплохо заработаем,<br>поднимая его на ваш этаж!</p>
@@ -252,7 +240,7 @@
                 <h2>Кредит</h2>
                 <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
                 <a href="credit.html" class="btn">Отправить заявку</a>
-              </div>
+                </div>
             </div>
           </div>
         </div>
@@ -278,35 +266,6 @@
               <img src="img/map-big.jpg" width="941" height="449" alt="Схема проезда">
             </div>
             <a class="btn feedback" href="#">Заблудились? Напишите нам!</a>
-          </div>
-          <div class="write-us">
-            <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-            <form action="#" method="post">
-              <div class="top-part">
-                <div class="container-modal">
-                  <div class="name">
-                    <label>Ваше имя:
-                      <input type="text" name="fio" value="" placeholder="Представьтесь, пожалуйста">
-                    </label>
-                  </div>
-                  <div class="email">
-                    <label>Ваш e-mail:
-                      <input type="text" name="email" value="" placeholder="Для отправки ответа">
-                    </label>
-                  </div>
-                  <div class="letter-text">
-                    <label>Текст письма:
-                      <textarea name="text" placeholder="В свободной форме"></textarea>
-                    </label>
-                  </div>
-                </div>
-              </div>
-              <div class="bottom-part">
-                <div class="container-modal">
-                  <input type="submit" class="btn" value="Отправить">
-                </div>
-              </div>
-            </form>
           </div>
         </div>
       </div>
@@ -361,9 +320,9 @@
             <p>&#9400; 2010-2015 Компания "Техномарт" Все права защищены</p>
           </div>
           <div class="footer-social">
-            <a class="social social-vk" href="http://vk.com"></a>
-            <a class="social social-fb" href="http://facebook.com"></a>
-            <a class="social social-inst" href="http://instagram.com"></a>
+            <a class="social social-vk" href="http://vk.com">Вконтакте</a>
+            <a class="social social-fb" href="http://facebook.com">Фейсбук</a>
+            <a class="social social-inst" href="http://instagram.com">Инстаграм</a>
           </div>
           <div class="info">
             <p class="developers">Разработано - <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
@@ -374,6 +333,45 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+     <div class="cart-modal">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <div class="message">
+          <p>Товар добавлен в корзину!</p>
+        </div>
+        <div class="modal-btns">
+          <a class="modal-btn-checkout btn" href="#">Оформить заказ</a>
+          <a class="modal-btn-continue btn" href="#">Продолжить покупки</a>
+        </div>
+      </div>
+      <div class="write-us">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+        <form action="#" method="post">
+          <div class="top-part">
+            <div class="container-modal">
+              <div class="name">
+                <label>Ваше имя:
+                  <input type="text" name="fio" value="" placeholder="Представьтесь, пожалуйста">
+                </label>
+              </div>
+              <div class="email">
+                <label>Ваш e-mail:
+                  <input type="text" name="email" value="" placeholder="Для отправки ответа">
+                </label>
+              </div>
+              <div class="letter-text">
+                <label>Текст письма:
+                  <textarea name="text" placeholder="В свободной форме"></textarea>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="bottom-part">
+            <div class="container-modal">
+              <input type="submit" class="btn" value="Отправить">
+            </div>
+          </div>
+        </form>
+      </div>
+    <script src="js/script-min.js"></script>
   </body>
 </html>

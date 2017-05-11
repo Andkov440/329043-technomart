@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Каталог</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
   </head>
@@ -16,7 +16,7 @@
             <a href="index.html"><img src="img/header-logo.png" width="220" height="47" alt="Лого"></a>
           </div>
           <form class="search" action="#" method="post">
-            <label for="search" class="search-icon">
+            <label for="search" class="search-icon">Поиск
               <input type="text" name="search" id="search" autocomplete="off" placeholder="Поиск:">
             </label>
           </form>
@@ -36,8 +36,7 @@
               <p class="header-address">г. Санкт-Петербург, ул. Б.Конюшенная, д.19/8</p>
              </div>
             <div class="user-area">
-              <p class="username">Равшан Джамшутович<a href="logout.html" class="btn-logout"></a></p>
-
+              <p class="username"><a href="profile.html" class="btn-profile"></a><a href="profile.html" class="name">Равшан Джамшутович</a><a href="logout.html" class="btn-logout">Выход</a></p>
               <a class="myorders" href="orders.html">Мои заказы</a><span>&#8226;</span>
               <a class="cabinet" href="cabinet.html">Личный кабинет</a>
             </div>
@@ -122,7 +121,7 @@
               <label for="ch3">Makita</label>
               <input type="checkbox" id="ch4" name="Dewalt">
               <label for="ch4">Dewalt</label>
-              <input type="checkbox" id="ch5" nname="Hitachi">
+              <input type="checkbox" id="ch5" name="Hitachi">
               <label for="ch5">Hitachi</label>
             </fieldset>
             <div class="delimiter"></div>
@@ -147,8 +146,8 @@
             <label for="btn-sorting-1">по цене</label>
             <label for="btn-sorting-2">по типу</label>
             <label for="btn-sorting-3">по функционалу</label>
-            <label for="btn-sorting-up" class="sorting-up"></label>
-            <label for="btn-sorting-down" class="sorting-down"></label>
+            <label for="btn-sorting-up" class="sorting-up">вверх</label>
+            <label for="btn-sorting-down" class="sorting-down">вниз</label>
           </div>
           <div class="catalog-items catalog-items-punchers">
             <div class="catalog-item catalog-punchers">
@@ -252,16 +251,6 @@
               <a href="#">Следующая</a>
           </div>
         </div>
-        <div class="cart-modal">
-          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
-          <div class="message">
-            <p>Товар добавлен в корзину!</p>
-          </div>
-          <div class="modal-btns">
-            <a class="modal-btn-checkout btn" href="#">Оформить заказ</a>
-            <a class="modal-btn-continue btn" href="#">Продолжить покупки</a>
-          </div>
-        </div>
       </div>
       <article class="about-punchers">
         <div class="container">
@@ -333,6 +322,16 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <div class="cart-modal">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <div class="message">
+        <p>Товар добавлен в корзину!</p>
+      </div>
+      <div class="modal-btns">
+        <a class="modal-btn-checkout btn" href="#">Оформить заказ</a>
+        <a class="modal-btn-continue btn" href="#">Продолжить покупки</a>
+      </div>
+    </div>
+    <script src="js/script-min.js"></script>
 </body>
 </html>

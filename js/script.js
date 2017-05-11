@@ -13,15 +13,15 @@ var write_link = document.querySelector(".feedback");
 var write_popup = document.querySelector(".write-us");
 var write_close = document.querySelector(".modal-content-close");
 
-var countCart = 0;
-var countBookmarks = 0;
+var count_сart = 0;
+var count_bookmarks = 0;
 
 for(var i=0; i<cart_link.length; i++) {
   cart_link[i].addEventListener("click", function(event) {
     event.preventDefault();
     cart_popup.classList.add("cart-modal-show");
     cart.classList.add("cart-btn-full");
-    orders_count.innerText = ++countCart;
+    orders_count.innerText = ++count_сart;
 
   });
 }
@@ -30,7 +30,7 @@ for(var i=0; i<bookmark.length; i++) {
   bookmark[i].addEventListener("click", function(event) {
     event.preventDefault();
     bookmarks.classList.add("bookmarks-btn-full");
-    bookmarks_count.innerText = ++countBookmarks;
+    bookmarks_count.innerText = ++count_bookmarks;
   });
 }
 
