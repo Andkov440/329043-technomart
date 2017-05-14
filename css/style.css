@@ -432,6 +432,30 @@ body {
   line-height: 17px;
 }
 
+.main-navigation li:nth-child(2) a {
+  padding-left: 22px;
+}
+
+.main-navigation li:nth-child(3) a {
+  padding-left: 18px;
+}
+
+.main-navigation li:nth-child(4) a {
+  padding-left: 18px;
+}
+
+.main-navigation li:nth-child(5) a {
+  padding-left: 18px;
+}
+
+.main-navigation li:nth-child(6) a {
+  padding-left: 20px;
+}
+
+.main-navigation li:nth-child(7) a {
+  padding-left: 21px;
+}
+
 .main-navigation a:hover {
   background-color: #293449;
 }
@@ -1100,7 +1124,7 @@ body {
   position: fixed;
   display: none;
   width: 620px;
-  top: 347px;
+  top: 260px;
   left: 50%;
   margin-left: -310px;
   z-index: 20;
@@ -1216,7 +1240,6 @@ body {
 .about .transport-companies {
   float: left;
   width: 530px;
-  margin-bottom: 91px;
 }
 
 .top-part input::-webkit-input-placeholder,
@@ -1258,7 +1281,7 @@ body {
 }
 
 .transport-companies ul {
-  margin-bottom: 40px;
+  margin-bottom: 31px;
   font-size: 18px;
   font-family: Cuprum, Arial, sans-serif;
   line-height: 25px;
@@ -1271,16 +1294,19 @@ body {
 }
 
 .transport-companies .btn {
+  display: block;
+  width: 140px;
   padding: 10px 40px;
 }
 
 .contacts .map {
   display: block;
   margin-top: 18px;
-  margin-bottom: 41px;
+  margin-bottom: 32px;
 }
 
 .contacts .btn {
+  display: block;
   padding: 10px 61px;
 }
 
@@ -1288,7 +1314,7 @@ body {
   float: right;
   width: 301px;
   margin-left: 109px;
-  margin-bottom: 93px;
+  margin-bottom: 87px;
 }
 
 .footer-top {
