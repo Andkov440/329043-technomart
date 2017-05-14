@@ -116,8 +116,8 @@ body {
 }
 
 .cart-btn {
-  padding-left: 45px;
-  padding-right: 27px;
+  padding-left: 48px;
+  padding-right: 30px;
 }
 
 .bookmarks-btn:hover,
@@ -1100,7 +1100,7 @@ body {
   position: fixed;
   display: none;
   width: 620px;
-  top: 313px;
+  top: 347px;
   left: 50%;
   margin-left: -310px;
   z-index: 20;
