@@ -1702,16 +1702,14 @@ body {
   line-height: 18px;
 }
 
-.sorting input[type=radio] {
-  display: none;
-}
-
 .sorting .caption-sorting {
   padding-left: 18px;
   padding-right: 70px;
 }
 
-.sorting label {
+.sorting .sorting-price,
+.sorting .sorting-type,
+.sorting .sorting-functions {
   display: inline-block;
   margin: 10px 0;
   margin-left: 67px;
@@ -1751,7 +1749,9 @@ body {
   background-position: -97px -45px;
 }
 
-.sorting label:hover {
+.sorting .sorting-price:hover,
+.sorting .sorting-type:hover,
+.sorting .sorting-functions:hover {
   color: #000000;
   border-bottom: 1px solid #ee3643;
 }
@@ -1764,18 +1764,18 @@ body {
   background-position: -56px -45px;
 }
 
-#btn-sorting-1:checked ~ label[for="btn-sorting-1"],
-#btn-sorting-2:checked ~ label[for="btn-sorting-2"],
-#btn-sorting-3:checked ~ label[for="btn-sorting-3"] {
+.sorting .sorting-price:active,
+.sorting .sorting-type:active,
+.sorting .sorting-functions:active {
   border-bottom: none;
   color: #ee3643;
 }
 
-#btn-sorting-up:checked ~ label[for="btn-sorting-up"]::before {
+.sorting-up:active::before {
   background-position: -221px -45px;
 }
 
-#btn-sorting-down:checked ~ label[for="btn-sorting-down"]::before {
+.sorting-down:active::before {
   background-position: -181px -45px;
 }
 
