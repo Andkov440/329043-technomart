@@ -253,7 +253,7 @@ body {
 }
 
 .user-login {
-  width: 285px;
+  width: 281px;
 }
 
 .user-area {
@@ -272,8 +272,10 @@ body {
 }
 
 .user-login .registration {
-  margin-left: 10px;
-  padding-left: 22px;
+  margin-left: 9px;
+  padding-left: 21px;
+  padding-right: 25px;
+  padding-bottom: 11px;
 }
 
 .user-login .enter:hover,
@@ -288,14 +290,17 @@ body {
 
 .user-login .enter {
   position: relative;
-  padding-left: 49px;
-  padding-right: 25px;
+  padding-left: 47px;
+  padding-top: 8px;
+  padding-right: 24px;
+  padding-bottom: 11px;
 }
 
 .user-login .enter::before {
   position: absolute;
   content: "";
-  left: 13px;
+  left: 15px;
+  top: 12px;
   width: 18px;
   height: 20px;
   background: url("../img/sprite.png") no-repeat;
@@ -954,7 +959,7 @@ body {
   width: 10px;
   height: 272px;
   top: -40px;
-  left: 230px;
+  left: 232px;
   background-image: url("../img/line.png");
 }
 
@@ -1019,6 +1024,7 @@ body {
   font-family: Cuprum, Arial, sans-serif;
   color: rgb(61, 84, 110);
   line-height: 0.7;
+  font-weight: normal;
 }
 
 .services-delivery {
@@ -1043,7 +1049,7 @@ body {
   height: 285px;
   background-image: url("../img/guarantee.png");
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-position: 103% 100%;
   line-height: 24px;
 }
 
@@ -1054,7 +1060,7 @@ body {
   height: 285px;
   background-image: url("../img/credit.png");
   background-repeat: no-repeat;
-  background-position: 100% 100%;
+  background-position: 106% 100%;
   line-height: 24px;
 }
 
@@ -1063,7 +1069,7 @@ body {
 }
 
 .services-credit p {
-  padding-bottom: 30px;
+  padding-bottom: 34px;
   width: 280px;
 }
 
@@ -1767,7 +1773,7 @@ body {
 .sorting .sorting-price:active,
 .sorting .sorting-type:active,
 .sorting .sorting-functions:active {
-  border-bottom: none;
+  border-bottom-color: transparent;
   color: #ee3643;
 }
 
