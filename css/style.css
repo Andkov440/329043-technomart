@@ -112,7 +112,12 @@ body {
 
 .bookmarks-btn {
   padding-left: 45px;
-  padding-right: 29px;
+  padding-right: 27px;
+}
+
+.cart-btn {
+  padding-left: 45px;
+  padding-right: 27px;
 }
 
 .bookmarks-btn:hover,
@@ -565,7 +570,7 @@ body {
 .slider-controls {
   position: absolute;
   left: 292px;
-  top: 216px;
+  top: 211px;
   margin-bottom: 10px;
   z-index: 2;
   text-align: center;
@@ -978,6 +983,20 @@ body {
   color: #ffffff;
 }
 
+.tabs-controls .delivery-label {
+  padding-top: 13px;
+  padding-bottom: 18px;
+}
+
+.tabs-controls .garanty-label {
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+.tabs-controls .credit-label {
+  padding-top: 13px;
+  padding-bottom: 16px;
+}
+
 .tabs-controls label:hover {
   background-color: #293449;
 }
@@ -1373,16 +1392,15 @@ body {
 
 .footer-bottom .footer-social {
   float: left;
-  width: 300px;
+  width: 132px;
   text-align: center;
-  margin-left: 70px;
+  margin-left: 150px;
 }
 
 .footer-bottom .social {
   display: inline-block;
   width: 40px;
   height: 40px;
-  margin-right: 5px;
   background: #212a3a url("../img/sprite.png") no-repeat;
   vertical-align: middle;
   border-radius: 50%;
@@ -1396,14 +1414,16 @@ body {
 
 .footer-bottom .social-vk {
   background-position: -247px 2px;
+  margin-right: 2px;
 }
 
 .footer-bottom .social-fb {
-  background-position: -83px 2px;
+  background-position: -83px 0px;
+  margin-right: 2px;
 }
 
 .footer-bottom .social-inst {
-  background-position: -205px 2px;
+  background-position: -204px 1px;
 }
 
 .footer-bottom .info {
@@ -1533,6 +1553,17 @@ body {
   padding-bottom: 13px;
 }
 
+.manufacturers legend {
+  padding-bottom: 4px;
+  padding-top: 16px;
+}
+
+.power legend{
+  padding-bottom: 3px;
+  padding-top: 14px;
+  letter-spacing: 1px;
+}
+
 .filter label {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 15px;
@@ -1588,10 +1619,6 @@ body {
 
 .power label{
   font-size: 14px;
-}
-
-.power legend {
-  padding-bottom: 3px;
 }
 
 .range-filter {
@@ -1660,6 +1687,20 @@ body {
   vertical-align: middle;
 }
 
+.price-controls {
+  margin-bottom: 3px;
+}
+
+.price-controls .min-price {
+  padding-left: 13px;
+  padding-right: 9px;
+}
+
+.price-controls .max-price {
+  padding-left: 10px;
+  padding-right: 9px;
+}
+
 .price-controls .dash {
   padding: 0 4px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -1725,6 +1766,14 @@ body {
   vertical-align: middle;
 }
 
+.sorting .sorting-functions {
+  margin: 4px 5px 5px 58px;
+}
+
+.sorting .sorting-type {
+  margin: 4px 5px 5px 66px;
+}
+
 .sorting .sorting-up {
   margin-left: 35px;
 }
@@ -1743,8 +1792,8 @@ body {
 .sorting .sorting-down::before{
   content: "";
   position: absolute;
-  top: 4px;
-  left: 3px;
+  top: -9px;
+  left: 2px;
   width: 16px;
   height: 19px;
   background: url("../img/sprite.png") no-repeat;
@@ -1777,20 +1826,25 @@ body {
   color: #ee3643;
 }
 
+.sorting .active {
+  border-bottom-color: transparent;
+  color: #ee3643;
+}
+
 .sorting-up:active::before {
-  background-position: -221px -45px;
+  background-position: -222px -46px;
 }
 
 .sorting-down:active::before {
-  background-position: -181px -45px;
+  background-position: -180px -46px;
 }
 
 .catalog-items-punchers {
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 .pagination {
-  margin-top: 27px;
+  margin-top: 32px;
 }
 
 .pagination a {
